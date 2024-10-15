@@ -1,0 +1,16 @@
+.container {
+  padding: 10rem 5rem;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 870px) {
+  .container {
+    padding: 8rem 3rem;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .container {
+    padding: 7rem 2rem;
+  }
+}
