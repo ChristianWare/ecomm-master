@@ -5,11 +5,14 @@ import { Suspense } from "react";
 import { getWixClient } from "@/lib/wix-client.base";
 import Product from "@/components/Product/Product";
 import Skeleton from "@/components/Skeleton/Skeleton";
+import Nav from "@/components/Nav/Nav";
 
 export default function Home() {
   return (
     <main className={styles.page}>
       <LayoutWrapper>
+        <Nav />
+        <br />
         <h1>My Ecomm Masterclass</h1>
         <Suspense fallback={<LoadingSkeleton />}>
           <FeaturedProducts />
