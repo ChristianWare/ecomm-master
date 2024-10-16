@@ -11,7 +11,7 @@ import { members } from "@wix/members";
 import { redirects } from "@wix/redirects";
 import { reviews } from "@wix/reviews";
 import { createClient, OAuthStrategy } from "@wix/sdk";
-import { products, collections } from "@wix/stores";
+import { collections, products } from "@wix/stores";
 
 export function getWixClient() {
   return createClient({
