@@ -1,3 +1,9 @@
+.container {
+  border: 1px solid var(--lightBlack);
+  padding: 1rem;
+}
+
+/* For this to work you need to make sure that the images are all the same size, 700 x 700 for example. */
 .imgContainer {
   position: relative;
   width: 100%;
@@ -32,3 +38,10 @@
   height: 100%;
   object-fit: cover;
 } */
+
+.ribbon {
+  background-color: red;
+  color: var(--white);
+  width: fit-content;
+  padding: 1rem;
+}

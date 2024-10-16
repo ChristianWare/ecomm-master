@@ -1,0 +1,40 @@
+.skeletonContainer {
+  position: relative;
+  width: 100%;
+  height: auto;
+  font-size: 0;
+  overflow: hidden;
+  background-color: #f0f0f0; /* Light gray background */
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.skeletonImage {
+  width: 100%;
+  height: auto; /* Matches the responsive height behavior of the product image */
+  padding-top: 100%; /* Creates a 1:1 aspect ratio for a square placeholder */
+  background-color: #e0e0e0; /* Lighter gray for image placeholder */
+  border-radius: 4px;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+.skeletonText {
+  width: 80%;
+  height: 16px;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  margin: 8px 0;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #e0e0e0;
+  }
+  50% {
+    background-color: #f0f0f0;
+  }
+  100% {
+    background-color: #e0e0e0;
+  }
+}
